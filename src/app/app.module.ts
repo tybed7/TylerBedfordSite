@@ -21,7 +21,6 @@ import { AppComponent } from './app.component';
 import { HttpServiceModule } from './shared/asyncServices/http/http.module'
 import { AboutModule }    from './about/about.module';
 import { UtilityModule}        from './shared/utility';
-import { PageNotFoundComponent } from './shared/components/pageNotFound/pageNotFound.component'
 
 //Store
 import { store }               from './shared/store';

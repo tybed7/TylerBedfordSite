@@ -7,9 +7,13 @@ import { TranslateModule }              from '@ngx-translate/core';
 
 
 import { PageNotFoundComponent }        from './pageNotFound/pageNotFound.component';
+import { FooterComponent }              from './footer/footer.component'
+import { TabsComponent }                from './tabs/tabs.component'
 
 export const COMPONENTS = [
-  PageNotFoundComponent
+  PageNotFoundComponent,
+  FooterComponent,
+  TabsComponent
 ];
 
 @NgModule({

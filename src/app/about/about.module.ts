@@ -2,7 +2,7 @@ import { NgModule }                 from '@angular/core';
 import { CommonModule }             from '@angular/common';
 import { BrowserModule }            from "@angular/platform-browser";
 import { ComponentsModule }         from '../shared/components';
-//import { ContainersModule }         from '../shared/containers';
+import { ContainersModule }         from '../shared/containers';
 import { TranslateModule }          from '@ngx-translate/core';
 import { RouterModule }             from '@angular/router'
 import { AboutSandbox } from './about.sandbox';
@@ -16,6 +16,7 @@ import { SimpleNotificationsModule } from 'angular2-notifications';
 @NgModule({
     imports: [
         CommonModule,
+        ContainersModule,
     BrowserAnimationsModule,
     ComponentsModule,
     TranslateModule,

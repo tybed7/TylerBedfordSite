@@ -1,0 +1,37 @@
+.fa {
+  padding: 5px;
+  font-size: 30px;
+  width: 41px;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 7px;
+  border-radius: 50%;
+}
+.material-icons{
+  padding: 5px;
+  font-size: 30px;
+  width: 41px;
+  text-align: center;
+  text-decoration: none;
+  margin:auto;
+  border-radius: 50%;
+  background: black;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.material-icons:hover {
+  opacity: 0.7;
+}
+
+.fa-github{
+  background: black;
+  color: white;
+}
+
+.fa-linkedin { 
+  background: #007bb5;
+  color: white;
+}
