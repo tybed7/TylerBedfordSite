@@ -47,7 +47,6 @@ import {
   SimpleNotificationsModule,
   NotificationsService
 }                              from 'angular2-notifications';
-import { MaterializeModule }   from 'angular2-materialize'
 
 //Factory function to load the config file before application startup
 export function configServiceFactory (config: ConfigService) {
@@ -83,10 +82,8 @@ export function configServiceFactory (config: ConfigService) {
     TranslateModule.forRoot(),
 
     //SimpleNotificationsModule
-    SimpleNotificationsModule.forRoot(),
+    SimpleNotificationsModule.forRoot()
 
-    //Materialize Module
-    MaterializeModule
   ],
   providers: [
     ConfigService,
