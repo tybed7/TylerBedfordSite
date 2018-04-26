@@ -7,6 +7,7 @@ import { TranslateModule }          from '@ngx-translate/core';
 import { RouterModule }             from '@angular/router'
 import { AboutSandbox } from './about.sandbox';
 import { AboutComponent } from './about.component'
+import { AboutRoutingModule } from './about-routing.module'
 import { BrowserAnimationsModule }   from '@angular/platform-browser/animations';
 
 import { SimpleNotificationsModule } from 'angular2-notifications';
@@ -16,10 +17,10 @@ import { SimpleNotificationsModule } from 'angular2-notifications';
     imports: [
         CommonModule,
     BrowserAnimationsModule,
-    
     ComponentsModule,
     TranslateModule,
-    SimpleNotificationsModule
+    SimpleNotificationsModule,
+    AboutRoutingModule
     ],
     declarations: [AboutComponent],
     providers: [AboutSandbox]

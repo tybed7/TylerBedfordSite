@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { Router }     from '@angular/router';
 import { AppSandbox } from './app.sandbox';
-import { PageNotFoundComponent } from './shared/components/pageNotFound/pageNotFound.component';
 
 @Component({
   selector: 'body',

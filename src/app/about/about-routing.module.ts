@@ -5,7 +5,7 @@ import {
 }                            from '@angular/router';
 import { AboutComponent }    from './about.component';
 
-const authRoutes: Routes = [
+const aboutRoutes: Routes = [
   {
     path: 'about',
     component: AboutComponent
@@ -14,7 +14,7 @@ const authRoutes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forChild(authRoutes)
+    RouterModule.forChild(aboutRoutes)
   ],
   exports: [
     RouterModule

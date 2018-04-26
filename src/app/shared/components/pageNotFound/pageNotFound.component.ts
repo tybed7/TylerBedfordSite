@@ -6,8 +6,7 @@ import { Location } from '@angular/common';
   template: `
     <div>
     	
-      	<h1>hi</h1>
-      	<h3>you did it</h3>
+      	<h1>The page you are on is not here m8</h1>
    
     </div>
   `
