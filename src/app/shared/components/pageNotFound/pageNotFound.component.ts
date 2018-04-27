@@ -18,7 +18,7 @@ import { Location } from '@angular/common';
   `
 })
 export class PageNotFoundComponent {
-  error = 'This page can not be found'
+  error = 'This page can not be found or is currently being developed'
   button = 'Go Back'
 	constructor(private location: Location) {}
 

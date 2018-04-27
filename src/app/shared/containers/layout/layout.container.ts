@@ -8,7 +8,7 @@ import { ConfigService }    from '../../../app-config.service';
   selector: 'app-layout',
   styleUrls: ['./layout.container.scss'],
   template: `
-    <div class="card-panel blue lighten-3 ">
+    <div class="card-panel blue lighten-3 no-margin">
       <ng-content></ng-content>
     </div>
   `

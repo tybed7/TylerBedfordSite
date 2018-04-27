@@ -54,11 +54,37 @@ import {
         
       </div>
     </div>
-    
-  </div>
+    </div>
+    <div class="card-panel white">
+    <div class="row">
+        <div class="col center s12 m12 l12">
+              <h3 class="card-title black-text">{{goals}}</h3>
+              <h5 class="black-text">{{goalbio}}</h5>
+        </div>
+      </div>
+
+      <div class="row">
+      <div class="col center s12 m4 l4">
+      <i class="material-icons blue large roundcon">share</i>
+      <h5 class="card-content">{{goal2}}</h5>
+      </div>
+      <div class="col center s12 m4 l4">
+      <i class="material-icons blue large roundcon">merge_type</i>
+      <h5 class="card-content">{{goal1}}</h5>
+      </div>
+      <div class="col center s12 m4 l4">
+      <i class="material-icons blue large roundcon">touch_app</i>
+      <h5 class="card-content">{{goal3}}</h5>
+      </div>
+      
+      
+      </div>
+
+    </div>
     </app-layout>
     <app-footer></app-footer>
-    `
+    `,
+    styleUrls: ["./about.component.scss"]
   })
   export class AboutComponent {
   title = "Tyler Bedford"
@@ -71,6 +97,11 @@ import {
   card2Bio = "I developed promotional websites and emails, mobile apps, and applications for clients and the company. I worked here for over a year developing most of the skills I use today."
   card3Title = "Education"
   card3Bio = "Graduated from Bentonville High School in 2017. I was part of the Ignite program which allowed high school students to maintain internships during class for an industry of interest."
+  goals = "Objectives"
+  goalbio = "What I hope to achieve with this website"
+  goal1 = "Give insights into the current projects I am working on. This will include code examples, live examples, and explanations of how I developed my projects"
+  goal2 = "Allow others to contact me about projects or work that they may be insterested in having me collaborate with."
+  goal3 = "Showcase specific technologies that I would be interested in learning/developing"
   biography = "A collection about myself, my projects, and ideas"
     constructor(
       private router: Router,
