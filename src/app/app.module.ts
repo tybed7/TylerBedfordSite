@@ -20,6 +20,8 @@ import { AppRoutingModule }    from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpServiceModule } from './shared/asyncServices/http/http.module'
 import { AboutModule }    from './about/about.module';
+import { ProjectsModule } from './projects/projects.module'
+import { ContactModule }  from './contact/contact.module'
 import { UtilityModule}        from './shared/utility';
 
 //Store
@@ -69,6 +71,8 @@ export function configServiceFactory (config: ConfigService) {
 
     //App Custom Modules
     AboutModule,
+    ProjectsModule,
+    ContactModule,
     AppRoutingModule,
 
     //Store
