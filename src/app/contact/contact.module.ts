@@ -9,8 +9,12 @@ import { ContactSandbox } from './contact.sandbox';
 import { ContactComponent } from './contact.component'
 import { ContactRoutingModule } from './contact-routing.module'
 import { BrowserAnimationsModule }   from '@angular/platform-browser/animations';
-
+import {
+    FormsModule,
+    ReactiveFormsModule
+  }                                    from '@angular/forms';
 import { SimpleNotificationsModule } from 'angular2-notifications';
+import { ContactApiClient } from './contactApiClient.service';
 
 
 @NgModule({
@@ -18,13 +22,18 @@ import { SimpleNotificationsModule } from 'angular2-notifications';
         CommonModule,
         ContainersModule,
     BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
     ComponentsModule,
     TranslateModule,
     SimpleNotificationsModule,
     ContactRoutingModule
     ],
     declarations: [ContactComponent],
-    providers: [ContactSandbox]
+    providers: [
+        ContactSandbox,
+        ContactApiClient
+    ]
 
 })
 export class ContactModule {}

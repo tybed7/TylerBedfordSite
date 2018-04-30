@@ -1,0 +1,15 @@
+<app-tabs></app-tabs>
+    <app-layout>
+      <h1>Contact</h1>
+      <div class="form-container">
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit($event, contactForm.value)">
+    <input type="text" [formControl]="name" placeholder="name" class="txt">
+    <input type="text" [formControl]="email" placeholder="email" class="txt">
+    <input type="text" [formControl]="company" placeholder="company" class="txt">
+    <input type="text" [formControl]="message" placeholder="message" class="txt">
+
+    <button type="submit" class="">Submit</button>
+  </form>
+  </div>
+    </app-layout>
+    <app-footer></app-footer>

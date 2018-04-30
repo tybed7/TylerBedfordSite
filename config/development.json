@@ -1,27 +1,30 @@
 {
-    "api": {
-        "baseUrl": "/api"
-    },
-    
+  "api": {
+      "baseUrl": "/api"
+  },
+  
 
 
 "localization": {
-    "languages": [
+  "languages": [
 
-      {"code": "en", "name": "EN", "culture": "en-EN"}
-    ],
-    "defaultLanguage": "en"
-  },
+    {"code": "en", "name": "EN", "culture": "en-EN"}
+  ],
+  "defaultLanguage": "en"
+},
 
 "notifications": {
-    "options": {
-      "timeOut": 5000,
-      "showProgressBar": true,
-      "pauseOnHover": true,
-      "position": ["top", "right"],
-      "theClass": "sy-notification"
-    }
-  },
+  "options": {
+    "timeOut": 5000,
+    "showProgressBar": true,
+    "pauseOnHover": true,
+    "position": ["top", "right"],
+    "theClass": "sy-notification"
+  
+},
+"unauthorizedEndpoints": ["api/contact"],
+"notFoundEndpoints": ["api/contact"]
+},
 
-  "debugging": true
+"debugging": true
 }

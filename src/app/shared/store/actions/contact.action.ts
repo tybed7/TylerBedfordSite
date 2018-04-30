@@ -17,7 +17,7 @@ export const ActionTypes = {
 
 export class DoContactAction implements Action{
      type = ActionTypes.DO_CONTACT;
-
+    
      constructor(public payload: ContactForm) { }
  }
 

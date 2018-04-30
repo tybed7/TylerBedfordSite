@@ -2,5 +2,29 @@
     "api": {
         "baseUrl": "/api"
     },
-    "debugging": true
+    
+
+
+"localization": {
+    "languages": [
+
+      {"code": "en", "name": "EN", "culture": "en-EN"}
+    ],
+    "defaultLanguage": "en"
+  },
+
+"notifications": {
+    "options": {
+      "timeOut": 5000,
+      "showProgressBar": true,
+      "pauseOnHover": true,
+      "position": ["top", "right"],
+      "theClass": "sy-notification"
+    
+  },
+  "unauthorizedEndpoints": ["api/contact"],
+  "notFoundEndpoints": ["api/contact"]
+},
+
+  "debugging": false
 }

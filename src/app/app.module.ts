@@ -4,6 +4,7 @@ import {
   APP_INITIALIZER,
   NgModule 
 }                          from '@angular/core';
+import { FormsModule }         from '@angular/forms';
 import {
   HttpModule,
   RequestOptions,
@@ -25,7 +26,7 @@ import { ContactModule }  from './contact/contact.module'
 import { UtilityModule}        from './shared/utility';
 
 //Store
-import { store }               from './shared/store';
+import { reducers }               from './shared/store';
 
 //Effects
 import { ContactEffects }     from './shared/store/effects/contact.effect'
@@ -62,6 +63,7 @@ export function configServiceFactory (config: ConfigService) {
   imports: [
     //Angular Core Dependencies
     BrowserModule,
+    FormsModule,
     HttpModule,
 
     //Http Service
@@ -77,7 +79,7 @@ export function configServiceFactory (config: ConfigService) {
     AppRoutingModule,
 
     //Store
-    StoreModule.forRoot(store),
+    StoreModule.forRoot({contact: reducers}),
     StoreDevtoolsModule.instrument(),
     //Effects
     EffectsModule.forRoot([ContactEffects]),
