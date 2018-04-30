@@ -3,8 +3,8 @@ import {
   NgModule,
   ModuleWithProviders
 }                              from "@angular/core";
-//import { HttpService }         from './http.service';
-//import { HttpResponseHandler } from './httpResponseHandler.service';
+import { HttpService }         from './http.service';
+import { HttpResponseHandler } from './httpResponseHandler.service';
 
 @NgModule({
   imports: [CommonModule]
@@ -15,8 +15,8 @@ export class HttpServiceModule {
       ngModule: HttpServiceModule,
 
       providers: [
-        //HttpService,
-        //HttpResponseHandler
+        HttpService,
+        HttpResponseHandler
       ]
     };
   }

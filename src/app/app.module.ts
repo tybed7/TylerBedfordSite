@@ -28,7 +28,7 @@ import { UtilityModule}        from './shared/utility';
 import { store }               from './shared/store';
 
 //Effects
-//TODO add effects
+import { ContactEffects }     from './shared/store/effects/contact.effect'
 
 //Guards
 
@@ -48,6 +48,7 @@ import {
   SimpleNotificationsModule,
   NotificationsService
 }                              from 'angular2-notifications';
+
 
 //Factory function to load the config file before application startup
 export function configServiceFactory (config: ConfigService) {
@@ -79,7 +80,7 @@ export function configServiceFactory (config: ConfigService) {
     StoreModule.forRoot(store),
     StoreDevtoolsModule.instrument(),
     //Effects
-    //TODO Run effects
+    EffectsModule.forRoot([ContactEffects]),
 
     //Internationalization Module
     TranslateModule.forRoot(),
